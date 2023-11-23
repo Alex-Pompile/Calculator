@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #000814, #001D3D);
+    margin: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.calculator {
+    border: 6px solid #003566c0; /* Medium navy blue with opacity */
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 0px 20px rgba(84, 84, 84, 0.2);
+    position: relative;
+    text-align: right;
+    max-width: 400px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFC300; /* Vibrant yellow */
+    outline: none;
+    border-bottom: 2px solid transparent;
+}
+
+input::placeholder {
+    color: #FFD60A; /* Slightly different shade of yellow */
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #001D3D; /* Dark navy blue */
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+    position: relative;
+    box-shadow: -6px -5px 17px rgba(2, 0, 136, 0.456);
+}
+
+button:hover {
+    background-color: #FFC300; /* Vibrant yellow */
+    color: #000814; /* Very dark blue */
+    font-size: 30px;
+}
+
+button:active {
+    top: 5px;
+}
+
+.equalBtn {
+    background-color: #FFD60A; /* Yellow */
+    box-shadow: -8px -8px 15px rgba(150, 130, 130, 0.186);
+}
+
+.operator {
+    color: #ffffff; /* White */
+    font-weight: 600;
+    font-size: 24px;
+    background-color: #003566; /* Medium navy blue */
+}
